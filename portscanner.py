@@ -13,13 +13,13 @@ def portScanner(lugar, inicio, final):
         resp = dispCliente.connect_ex((lugar, porta))
         if (resp == 0):
             resultados['disponivel'].append(porta)
-        elif (resp == 10035):
+        elif (resp == 10035): # erro de time out
             resultados['filtrada'].append(porta)
         else:
             resultados['fechada'].append(porta)
     printResultados(resultados)
 
-lugarUsuario = input("Digite o lugar a ser analisado: ")
+lugarUsuario = input("Digite o host a ser analisado: ")
 rangeUsuario = list(map(int, input("Digite o range das portas a serem analisadas: ").split()))
 
 portScanner(lugarUsuario, rangeUsuario[0], rangeUsuario[1])
