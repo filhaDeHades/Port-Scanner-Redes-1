@@ -7,6 +7,6 @@ Trabalho para a matéria de Redes de Computadores 1.
 ## Membros do Grupo
 
 - Alan Gomes
-- Bruna
-- Matheus
+- Bruna de Assunção
+- Matheus Pimentel
 - Tamires da Hora
